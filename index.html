@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="/home/asvc/Documents/Meeting2/style.css">
+  </head>
+
+  <body>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <nav id="navbar">
+    <header>Python Documentation</header>
+
+  <ul>
+    <li><a class="nav-link" href="#About">About</a></li>
+
+    <li>
+      <a class="nav-link" href="#Comparing_Python_to_Other_Languages">Comparing Python to Other Languages</a>
+    </li>
+    <li><a class="nav-link" href="#Installing">Installing</a></li>
+
+    <li><a class="nav-link" href="#Example_a">Example a</a></li>
+
+    <li><a class="nav-link" href="#Python_Indentation">Python Indentation</a></li>
+
+    <li><a class="nav-link" href="#Python_Variables">Python Variables</a></li>
+
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+
+  <section class="main-section" id="About">
+    <header>About</header>
+    <article>
+      <p>
+        Python is an easy to learn, powerful programming language. It has efficient high-level data structures
+        and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing,
+        together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.
+      </p>
+
+      <p>
+        The Python interpreter and the extensive standard library are freely available in source or binary form for all major platforms from the Python web site,
+        https://www.python.org/, and may be freely distributed.
+        The same site also contains distributions of and pointers to many free third party Python modules, programs and tools, and additional documentation.
+      </p>
+
+        <p>
+          The Python interpreter is easily extended with new functions and data types implemented in C or C++
+          (or other languages callable from C). Python is also suitable as an extension language for customizable applications.
+        </p>
+        <p>
+          This tutorial introduces the reader informally to the basic concepts and features of the Python language and system.
+          It helps to have a Python interpreter handy for hands-on experience, but all examples are self-contained,
+          so the tutorial can be read off-line as well.
+        </p>
+      </ul>
+    </article>
+  </section>
+
+
+  <section class="main-section" id="Comparing_Python_to_Other_Languages">
+    <header>Comparing Python to Other Languages</header>
+    <article>
+      <p>
+        Python is often compared to other interpreted languages such as Java, JavaScript, Perl, Tcl,
+        or Smalltalk. Comparisons to C++, Common Lisp and Scheme can also be enlightening. In this section I will briefly
+        compare Python to each of these languages. These comparisons concentrate on language issues only. In practice,
+        the choice of a programming language is often dictated by other real-world constraints such as cost, availability, training, and prior investment,
+        or even emotional attachment. Since these aspects are highly variable, it seems a waste of time to consider them much for this comparison.
+      </p>
+
+      <li>
+        <spam><b>Java</b></spam>
+        <br>
+        Python programs are generally expected to run slower than Java programs,
+        but they also take much less time to develop. Python programs are typically 3-5 times
+        shorter than equivalent Java programs. This difference can be attributed to Python's built-in
+         high-level data types and its dynamic typing. For example, a Python programmer wastes no time
+         declaring the types of arguments or variables, and Python's powerful polymorphic list and dictionary
+         types, for which rich syntactic support is built straight into the language, find a use in almost every
+         Python program. Because of the run-time typing, Python's run time must work harder than Java's. For example,
+         when evaluating the expression a+b, it must first inspect the objects a and b to find out their type, which
+         is not known at compile time. It then invokes the appropriate addition operation, which may be an overloaded
+          user-defined method. Java, on the other hand, can perform an efficient integer
+         or floating point addition, but requires variable declarations for a and b, and does not allow
+          overloading of the + operator for instances of user-defined classes.
+      </li>
+
+
+      <li>
+        <spam><b>Javascript</b></spam>
+        <br>
+        Python's "object-based" subset is roughly equivalent to JavaScript.
+         Like JavaScript (and unlike Java), Python supports a programming style that uses simple functions
+         and variables without engaging in class definitions. However, for JavaScript, that's all there is.
+         Python, on the other hand,
+        supports writing much larger programs and better code reuse through a true object-oriented programming style,
+         where classes and inheritance play an important role.
+      </li>
+
+      <li>
+        <spam><b>C++</b></spam>
+        <br>
+        Almost everything said for Java also applies for C++, just more so: where Python code
+        is typically 3-5 times shorter than equivalent Java code, it is often 5-10 times shorter than equivalent
+        C++ code! Anecdotal evidence suggests that one Python programmer
+         can finish in two months what two C++ programmers can't complete in a year. Python shines
+          as a glue language, used to combine components written in C++.
+      </li>
+    </article>
+  </section>
+
+
+
+  <section class="main-section" id="Installing">
+    <header>Installing</header>
+    <article>
+      <p>Installing Python is generally easy, and nowadays many Linux and UNIX distribution
+      s include a recent Python. Even some Windows computers (notably those from HP) now come with Python
+      already installed. </p>
+
+      <p>If you do need to install
+      Python and aren't confident about the task you can find a few notes on the BeginnersGuide/Download
+      wiki page, but installation is unremarkable on most platforms.</p>
+    </article>
+  </section>
+
+
+
+
+  <section class="main-section" id="Example_a">
+    <header>Example a</header>
+    <article>
+      <code>print("Hello World!")</code>
+    </article>
+  </section>
+
+
+
+
+
+
+  <section class="main-section" id="Python_Indentation">
+    <header>Python Indentation</header>
+    <article>
+        <p>Indentation refers to the spaces at the beginning of a code line.</p>
+
+      <p>Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.</p>
+
+      <p>Python uses indentation to indicate a block of code.</p>
+
+      <code>if 5 > 2:
+      <spam class="tab1" style="padding-left: 2em;">print("Five is greater than two!")</spam></code>
+
+        Python will give you an error if you skip the indentation:
+
+      <code>if 5 > 2:
+        if 5 > 2:
+      print("Five is greater than two!")</code>
+
+
+      The number of spaces is up to you as a programmer, but it has to be at least one.
+
+      <code>if 5 > 2:
+      <spam class="tab1" style="padding-left: 1em;">print("Five is greater than two!")</spam>
+      if 5 > 2:
+      <spam class="tab1" style="padding-left: 4em;">print("Five is greater than two!")</spam></code>
+
+
+      You have to use the same number of spaces in the same block of code, otherwise Python will give you an error:
+        <code>if 5 > 2:
+      print("Five is greater than two!")
+        <spam class="tab1" style="padding-left: 4em;">print("Five is greater than two!")</spam></code>
+
+    </article>
+  </section>
+
+  <section class="main-section" id="Python_Variables">
+    <header>Python Variables</header>
+    <article>
+        <p>Indentation refers to the spaces at the beginning of a code line.</p>
+
+        <p>Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.</p>
+
+        <p>Python uses indentation to indicate a block of code.</p>
+
+        Variables in Python:
+
+        <code>x = 5
+        y = "Hello, World!"</code>
+
+        Python has no command for declaring a variable.
+    </article>
+  </section>
+
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <ul>
+       Documentation in this page is taken from:
+
+        <li><a href="https://docs.python.org/3/tutorial/index.html">https://docs.python.org/3/tutorial/index.html</a>
+        </li>
+        <li><a href="https://www.w3schools.com/python/python_syntax.asp">https://www.w3schools.com/python/python_syntax.asp</a>
+        </li>
+        <li><a href="https://www.python.org/doc/essays/comparisons/#:~:text=Python%20programs%20are%20generally%20expected,types%20and%20its%20dynamic%20typing.">https://www.python.org/doc/essays/comparisons/#:~:text=Python%20programs%20are%20generally%20expected,types%20and%20its%20dynamic%20typing.</a>
+        </li>
+      </ul>
+
+    </article>
+  </section>
+
+
+</main>
+
+    <script  src="js/index.js"></script>
+  </body>
+</html>
